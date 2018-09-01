@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/primain_bg"
+        android:layout_marginBottom="25dp"
+        >
+
+    </LinearLayout>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/head2"
+            android:layout_gravity="center|bottom"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/primain_main_layout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_weight="3"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/tx_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Biatrichi Moreno"
+            android:textColor="#000"
+            android:padding="5dp"
+            android:textSize="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="我就是我，不一样的烟火！"
+            android:padding="5dp"
+            android:textSize="14dp"
+            />
+        <TextView
+            android:id="@+id/tx_school"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="天津科技大学"
+            android:textColor="#000"
+            android:padding="5dp"
+            android:textSize="10dp"/>
+        <TextView
+            android:id="@+id/tx_student_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="17100120"
+            android:textColor="#000"
+            android:padding="5dp"
+            android:textSize="10dp"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_primain"
+            android:layout_width="match_parent"
+            app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+            android:layout_height="30dp"
+            app:tabMode="fixed"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/primain_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

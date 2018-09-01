@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    android:layout_gravity="start"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/drawer_menu"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingHorizontal="10dp"
+    android:background="#3c6cff">
+
+
+    <ImageView
+        android:id="@+id/quit_menu_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:layout_gravity="right"
+        android:src="@drawable/right_pointer" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <com.example.dy.sai_demo2.Views.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:src="@drawable/head1"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/me_layout"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="15dp"
+                android:text="赵钱孙"/>
+            <TextView
+                android:id="@+id/stu_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="10dp"
+                android:text="某学号"/>
+            <TextView
+                android:id="@+id/school_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="10dp"
+                android:text="某大学"/>
+
+
+
+        <ListView
+            android:paddingTop="20dp"
+            android:id="@+id/drawer_listview"
+            android:divider="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/img_quit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingVertical="10dp"
+            android:src="@drawable/drawer_quit"
+            />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tx_nologin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="top"
+            android:background="@drawable/button_bg"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:textColor="#fff"
+            android:text="未登录"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="#087ff5"
+        android:id="@+id/top"
+        android:paddingTop="25dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/back_imgv"
+            android:layout_margin="5dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_action_back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/title_tx"
+            android:padding="5dp"
+            android:textColor="#ffffff"
+            android:text="详情"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/center"
+        android:padding="15dp"
+        android:layout_below="@+id/top"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="大数联企业有限公司"
+            />
+        <RelativeLayout
+            android:id="@+id/user"
+            android:layout_below="@+id/title"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <ImageView
+                android:id="@+id/head_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/head2"
+                />
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="purfsfsd"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:layout_toRightOf="@+id/head_img"
+                />
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10-30-2017 20:00"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:layout_below="@+id/author"
+                android:layout_toRightOf="@+id/head_img"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/button_bg2"
+                android:textSize="10sp"
+                android:textColor="#fff"
+                android:text="  安  卓  "
+                />
+
+        </RelativeLayout>
+        <ScrollView
+            android:layout_below="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:padding="10dp"
+                    android:text="    HCNA认证主要定位于中小企业网络基本配置操作和设备维护，包括网络基础知识；流行网络的布线结构；网络连接方法；网络的建构；网络故障的排除；TCP/IP网络的建设；网络布线与网络互连实践；华为设备的安装与调试。"
+                    android:textColor="#000"
+                    android:textSize="10sp" />
+
+                <!--<Button-->
+                    <!--android:id="@+id/join"-->
+                    <!--android:layout_width="50sp"-->
+                    <!--android:layout_height="20sp"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:layout_margin="20dp"-->
+                    <!--android:background="@drawable/edit_bg"-->
+                    <!--android:text="参加招聘"-->
+                    <!--android:textSize="10sp" />-->
+
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>
+
+

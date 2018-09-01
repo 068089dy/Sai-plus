@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="#087ff5"
+        android:id="@+id/top"
+        android:paddingTop="25dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/back_imgv"
+            android:layout_margin="5dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_action_back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/title_tx"
+            android:padding="5dp"
+            android:textColor="#ffffff"
+            android:text="圈子"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/top">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/loop_class_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TabItem
+                android:id="@+id/tech_tbi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="技术交流"/>
+            <android.support.design.widget.TabItem
+                android:id="@+id/group_tbi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="团队组建"/>
+        </android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/class_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_margin="20dp"/>
+</RelativeLayout>

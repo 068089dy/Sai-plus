@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dy.sai_demo2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 加入在SDCard中创建与删除文件的权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 加入在SDCard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/sai_plus_enterprise"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Light.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".JoinedActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".UI.loop_ui.Activity_class_group_particulars" />
+        <activity android:name=".UI.loop_ui.Activity_class_add" />
+        <activity android:name=".UI.company_ui.Activity_particulars" />
+        <activity android:name=".Register2Activity" />
+        <activity android:name=".PushmatchActivity" />
+        <activity android:name=".Register3Activity" />
+        <activity android:name=".UI.company_ui.Activity_recruite" />
+        <activity android:name=".UI.primain_ui.Activity_agree"></activity>
+    </application>
+
+</manifest>
